@@ -10,6 +10,10 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const linkStyle = {
+    fontFamily: 'Arial, sans-serif',
+  };  
+
   return (
     <>
       <header className="bg-indigo-400 p-4">
@@ -30,33 +34,33 @@ const Navbar = () => {
           <div className="md:flex space-x-4">
             <ul className="hidden md:flex space-x-4">
               <li>
-                <Link to="/" className="text-sm front-bold text-white hover:font-bold">
-                  <i className="fa fa-home text-indigo-800"></i> HOME
+                <Link to="/" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
+                  <i className="fa fa-home text-indigo-800"></i> Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-sm text-white hover:font-bold">
-                  <i className="fa fa-info-circle text-indigo-800"></i> ABOUT
+                <Link to="/about" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
+                  <i className="fa fa-info-circle text-indigo-800"></i> About
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="text-sm text-white hover:font-bold">
-                  <i className="fa fa-briefcase text-indigo-800"></i> PROJECTS
+                <Link to="/projects" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
+                  <i className="fa fa-briefcase text-indigo-800"></i> Projects
                 </Link>
               </li>
               <li>
-                <Link to="/seo" className="text-sm text-white hover:font-bold">
+                <Link to="/seo" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
                   <i className="fa fa-search text-indigo-800"></i> SEO
                 </Link>
               </li>
               <li>
-                <Link to="/landingPage" className="text-sm text-white hover:font-bold">
-                  <i className="fa fa-rocket text-indigo-800"></i> LANDING PAGE
+                <Link to="/landingPage" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
+                  <i className="fa fa-rocket text-indigo-800"></i> Landing Paage
                 </Link>
               </li>
               <li>
-                <Link to="/automation" className="text-sm text-white hover:font-bold">
-                  <i className="fa fa-cogs text-indigo-800"></i> AUTOMATION
+                <Link to="/automation" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
+                  <i className="fa fa-cogs text-indigo-800"></i> Automation
                 </Link>
               </li>
             </ul>
@@ -67,33 +71,33 @@ const Navbar = () => {
         <div className="bg-indigo-400 p-4 mx-auto md:hidden">
           <ul className="p-4 space-y-4">
             <li>
-                <Link to="/" className="text-sm front-bold text-white hover:font-bold">
-                  <i className="fa fa-home text-indigo-800"></i> HOME
+                <Link to="/" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
+                  <i className="fa fa-home text-indigo-800"></i> Home
                 </Link>
             </li>
             <li>
-              <Link to="/about" className="text-sm front-bold text-white hover:font-bold">
-                  <i className="fa fa-info-circle text-indigo-800"></i> ABOUT
+              <Link to="/about" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
+                  <i className="fa fa-info-circle text-indigo-800"></i> About
               </Link>
             </li>
             <li>
-              <Link to="/projects" className="text-sm front-bold text-white hover:font-bold">
-                  <i className="fa fa-briefcase text-indigo-800"></i> PROJECTS
+              <Link to="/projects" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
+                  <i className="fa fa-briefcase text-indigo-800"></i> Projects
               </Link>
             </li>
             <li>
-              <Link to="/seo" className="text-sm front-bold text-white hover:font-bold">
+              <Link to="/seo" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
                   <i className="fa fa-search text-indigo-800"></i> SEO
               </Link>
             </li>
             <li>
-              <Link to="/landingPage" className="text-sm front-bold text-white hover:font-bold">
-                  <i className="fa fa-rocket text-indigo-800"></i> LANDING PAGE
+              <Link to="/landingPage" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
+                  <i className="fa fa-rocket text-indigo-800"></i> Landing Paage
               </Link>
             </li>
             <li>
-              <Link to="/automation" className="text-sm front-bold text-white hover:font-bold">
-                  <i className="fa fa-cogs text-indigo-800"></i> AUTOMATION
+              <Link to="/automation" className="text-sm font-bold text-white hover:font-bold" style={linkStyle}>
+                  <i className="fa fa-cogs text-indigo-800"></i> Automation
               </Link>
             </li>
           </ul>
