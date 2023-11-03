@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <main className="p-5 border-black border">
+    <main className="p-5">
       <div className="container mx-auto mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-white p-4">
           <h1 className="text-4xl md:text-6xl lg:text-9xl text-3xl md:text-5xl lg:text-7xl text-blue-500 py-5">Welcome</h1>
