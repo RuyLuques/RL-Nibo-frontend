@@ -39,11 +39,6 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/seo" className="text-sm font-bold text-white hover:text-gray-300" style={linkStyle}>
-                  <i className="fa fa-search text-blue-400"></i> SEO
-                </Link>
-              </li>
-              <li>
                 <Link to="/landingPage" className="text-sm font-bold text-white hover:text-gray-300" style={linkStyle}>
                   <i className="fa fa-rocket text-blue-400"></i> Landing Page
                 </Link>
@@ -59,11 +54,6 @@ const Navbar = () => {
                 <Link to="/" className="text-sm font-bold text-white hover:text-gray-300" style={linkStyle}>
                   <i className="fa fa-home text-blue-400"></i> Home
                 </Link>
-            </li>
-            <li>
-              <Link to="/seo" className="text-sm font-bold text-white hover:text-gray-300" style={linkStyle}>
-                  <i className="fa fa-search text-blue-400"></i> SEO
-              </Link>
             </li>
             <li>
               <Link to="/landingPage" className="text-sm font-bold text-white hover:text-gray-300" style={linkStyle}>
