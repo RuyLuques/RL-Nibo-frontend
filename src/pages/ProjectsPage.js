@@ -2,7 +2,7 @@ import React from 'react';
 import Home from '../components/Home/Home';
 import Projects from '../components/Projects/Projects';
 
-function Projects () {
+function ProjectsPage () {
     return (
         <div>
             <Home />
@@ -11,4 +11,4 @@ function Projects () {
     );
 };
 
-export default Projects;
+export default ProjectsPage;
