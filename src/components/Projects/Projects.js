@@ -5,8 +5,7 @@ const Projects = () => {
   const [projectData, setProjectData] = useState([]);
 
   useEffect(() => {
-    // Realize uma solicitação GET para a API para obter os dados dos projetos
-    fetch('http://localhost:8000/projects') // Assuma que o endpoint '/projects' retorna o JSON dos projetos
+    fetch('http://localhost:8000/projects')
       .then((response) => response.json())
       .then((data) => setProjectData(data));
   }, []);
