@@ -7,10 +7,10 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Seo from './components/SEO/Seo';
 import LandingPage from './components/LandingPage/LandingPage';
-import Automation from './components/Automation/Automation';
 import Backend from './components/Backend/Backend';
 import AutomationZapier from './components/AutomationZapier/AutomationZapier';
 import AutomationUipath from './components/AutomationUipath/AutomationUipath';
+import AutomationHubspot from './components/AutomationHubspot/AutomationHubspot';
 
 function App() {
   return (
@@ -22,10 +22,10 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/seo" element={<Seo />} />
           <Route path="/backend" element={<Backend />} />
+          <Route path="/automationhubspot" element={<AutomationHubspot />} />
           <Route path="/automationzapier" element={<AutomationZapier />} />
           <Route path="/automationuipath" element={<AutomationUipath />} />
           <Route path="/landingpage" element={<LandingPage />} />
-          <Route path="/Automation" element={<Automation />} />
         </Routes>
         <Footer />
     </Router>
