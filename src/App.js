@@ -14,6 +14,11 @@ import Seo from './components/SEO/Seo';
 import Services from './components/Services/Services';
 import Information from './components/Shared/Information/Information';
 import Technologies from './components/Technologies/Technologies';
+import LandingPageAbout from './components/LandingPageAbout/LandingPageAbout';
+import LandingPageHome from './components/LandingPageHome/LandingPageHome';
+import LandingPageForm from './components/LandingPageForm/LandingPageForm';
+import LandingPageAdvantage from './components/LandingPageAdvantage/LandingPageAdvantage';
+import LandingPageServices from './components/LandingPageServices/LandingPageServices';
 
 function App() {
   return (
@@ -42,6 +47,11 @@ function App() {
         <Route path="footer" element={<Footer />} />
         <Route path="information" element={<Information />} />
         <Route path="technologies" element={<Technologies />} />
+        <Route path="landingpageabout" element={<LandingPageAbout />} />
+        <Route path="landingpagehome" element={<LandingPageHome />} />
+        <Route path="landingpageservices" element={<LandingPageServices />} />
+        <Route path="landingpageform" element={<LandingPageForm />} /> 
+        <Route path="landingpageadvantage" element={<LandingPageAdvantage />} /> 
       </Routes>
     </Router>
   );

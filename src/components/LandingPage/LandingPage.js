@@ -9,7 +9,7 @@ import LandingPageForm from '../LandingPageForm/LandingPageForm';
 
 const LandingPage = () => {
     return (
-      <div>
+      <div data-test="landingpage-component">
         <Navbar backgroundColor="bg-indigo-800" textColor="text-white" />
         <LandingPageHome />
         <LandingPageAbout />

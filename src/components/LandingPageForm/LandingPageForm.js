@@ -45,7 +45,7 @@ const LandingPageForm = () => {
 
   return (
     <div>
-      <section className="bg-indigo-800 text-white py-12 p-5">
+      <section data-test="landingpageform-component" className="bg-indigo-800 text-white py-12 p-5">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-4xl font-semibold mb-6">{data.titleForm1}</h2>
           <p className="mb-8">{data.subtitleForm1}</p>

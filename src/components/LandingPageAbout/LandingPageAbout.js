@@ -18,7 +18,7 @@ const LandingPageAbout = () => {
 
     return (
       <div>
-        <section className="bg-white py-12 p-5">
+        <section data-test="landingpageabout-component" className="bg-white py-12 p-5">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl md:text-4xl lg:text-4xl font-semibold text-blue-900 mb-6">{data.cardAbout}</h2>
             <p className="mb-8">{data.descriptionAbout}</p>

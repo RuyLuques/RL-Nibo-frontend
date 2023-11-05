@@ -19,7 +19,7 @@ const LandingPageHome = () => {
 
     return (
       <div>
-        <div className="bg-indigo-800 text-white py-16 p-5">
+        <div data-test="landingpagehome-component" className="bg-indigo-800 text-white py-16 p-5">
         <Information />
           <div className="container mx-auto text-center">
             <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-4">{data.title}</h1>
