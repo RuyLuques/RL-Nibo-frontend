@@ -89,18 +89,18 @@ export const fetchHotsite = async () => {
       const data = await response.json();
       return data;
     } else {
-      console.error('Erro ao buscar produtos da API.');
+      console.error('Error fetching products from the API.');
       return [];
     }
   } catch (error) {
-    console.error('Ocorreu um erro inesperado ao buscar produtos:', error);
+    console.error('An unexpected error occurred when searching for products:', error);
     return [];
   }
 };
 
-export const submitForm = async (data) => {
+export const submitHotsite = async (data) => {
   try {
-    const response = await fetch('http://localhost:8000/submit', {
+    const response = await fetch('http://localhost:8000/submitHotsite', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -109,13 +109,13 @@ export const submitForm = async (data) => {
     });
 
     if (response.ok) {
-      return { type: 'success', text: 'Formulário enviado com sucesso!' };
+      return { type: 'success', text: 'Form sent successfully!' };
     } else {
-      return { type: 'error', text: 'Ocorreu um erro ao enviar o formulário.' };
+      return { type: 'error', text: 'There was an error sending the form' };
     }
   } catch (error) {
-    console.error('Ocorreu um erro inesperado:', error);
-    return { type: 'error', text: 'Ocorreu um erro inesperado ao enviar o formulário.' };
+    console.error('Unexpected error:', error);
+    return { type: 'error', text: 'An unexpected error occurred when sending the form' };
   }
 };
 
@@ -126,11 +126,46 @@ export const fetchTechnologies = async () => {
       const data = await response.json();
       return data;
     } else {
-      console.error('Erro ao buscar tecnologias da API.');
+      console.error('Error when searching for API technologies.');
       return [];
     }
   } catch (error) {
-    console.error('Ocorreu um erro inesperado ao buscar tecnologias:', error);
+    console.error('An unexpected error occurred when searching for technologies:', error);
     return [];
+  }
+};
+
+export async function fetchLandingPageData() {
+  try {
+    const response = await fetch('http://localhost:8000/landingpage');
+    if (!response.ok) {
+      throw new Error('Unable to retrieve data from the backend');
+    }
+    const jsonData = await response.json();
+    return jsonData[0];
+  } catch (error) {
+    console.error('Error when searching for backend data:', error);
+    throw error;
+  }
+}
+
+export const submitLandingpage = async (data) => {
+  try {
+    const response = await fetch('http://localhost:8000/submitLandingpage', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      return { type: 'success', text: 'Form sent successfully!' };
+    } else {
+      return { type: 'error', text: 'An error occurred when sending the form.' };
+    }
+  } catch (error) {
+    console.error('An unexpected error has occurred:', error);
+    return { type: 'error', text: 'An unexpected error occurred when sending the form.' };
   }
 };

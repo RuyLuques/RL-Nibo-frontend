@@ -49,7 +49,7 @@ const Projects = () => {
   return (
     <div data-test="projects-component" className="bg-indigo-800 py-10">
       <div className="container mx-auto h-full">
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-5">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
           {projectData.map((project) => (
             <div key={project.id}>
               <div

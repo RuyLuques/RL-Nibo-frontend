@@ -3,7 +3,7 @@ import { SearchIcon } from '@heroicons/react/solid';
 import Navbar from '../Shared/Navbar/Navbar';
 import Footer from '../Shared/Footer/Footer';
 import Information from '../Shared/Information/Information';
-import { fetchHotsite, submitForm } from '../../services/api';
+import { fetchHotsite, submitHotsite } from '../../services/api';
 
 function Hotsite() {
   const [name, setName] = useState('');
@@ -36,7 +36,7 @@ function Hotsite() {
     }
 
     const formData = { name, email, phone };
-    const formSubmitResponse = await submitForm(formData);
+    const formSubmitResponse = await submitHotsite(formData);
 
     setFormMessage(formSubmitResponse);
   };
