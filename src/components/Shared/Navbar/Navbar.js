@@ -20,7 +20,7 @@ const Navbar = ({ backgroundColor, textColor }) => {
 
   return (
     <>
-      <header className={`p-2 ${headerStyle.background}`}>
+      <header data-test="navbar-component" className={`p-2 ${headerStyle.background}`}>
         <div className="container mx-auto flex justify-between items-center">
           <div className={`text-2xl font-bold ${linkStyle.color}`}>Ana Ruy</div>
           <div className="md:hidden flex ml-auto">

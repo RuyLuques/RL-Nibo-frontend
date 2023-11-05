@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import LandingPage from '../LandingPage/LandingPage';
 import SEO from '../SEO/Seo';
 import Backend from '../Backend/Backend';
-import AutomationUipath from '../AutomationUipath/AutomationUipath';
 import AutomationZapier from '../AutomationZapier/AutomationZapier';
 import AutomationHubspot from '../AutomationHubspot/AutomationHubspot';
 import ProjectsComponent from '../Projects/Projects';
@@ -18,7 +17,6 @@ const Projects = () => {
     seo: SEO,
     backend: Backend,
     automationzapier: AutomationZapier,
-    automationuipath: AutomationUipath,
     automationhubspot: AutomationHubspot,
     projects: ProjectsComponent,
     services: ServicesComponent,
@@ -49,7 +47,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="bg-indigo-800 py-10">
+    <div data-test="projects-component" className="bg-indigo-800 py-10">
       <div className="container mx-auto h-full">
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-5">
           {projectData.map((project) => (

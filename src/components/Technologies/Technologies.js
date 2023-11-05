@@ -43,7 +43,7 @@ const Technologies = () => {
   };
 
   return (
-    <div className="py-10">
+    <div data-test="technologies-component" className="py-10">
       <div className="container mx-auto h-full">
         <Slider {...settings}>
           {technologyData.map((technology) => (

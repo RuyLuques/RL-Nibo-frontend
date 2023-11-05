@@ -12,7 +12,7 @@ const Footer = ({ backgroundColor, textColor }) => {
     fontFamily: 'Arial, sans-serif',
   };
   return (
-    <footer className={`p-2 ${headerStyle.background}`}>
+    <footer data-test="footer-component" className={`p-2 ${headerStyle.background}`}>
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
         <div className="mb-4 md:mb-0">
         <div className="text-orange-600 text-sm font-bold">Ana Ruy</div>

@@ -13,7 +13,7 @@ function AutomationHubspot() {
   }, []);
 
   return (
-    <div className="bg-white py-10 rounded-md">
+    <div data-test="automationhubspot-component" className="bg-white py-10 rounded-md">
       <div className="container mx-auto h-full">
         <h1 className="text-4xl text-orange-600 font-bold text-center mb-8">Hubspot</h1>
         <div className="grid grid-cols-1 p-5 md:grid-cols-2 lg:grid-cols-4 gap-4">

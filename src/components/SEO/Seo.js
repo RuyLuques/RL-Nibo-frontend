@@ -27,7 +27,7 @@ const Seo = () => {
     };
 
     return (
-        <div className="bg-white py-10 rounded-md">
+        <div data-test="seo-component" className="bg-white py-10 rounded-md">
         <h1 className="text-3xl text-center font-semibold mb-8 lg:text-5xl md:text-4xl text-orange-600">SEO</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-5">
                 {projects.map((project) => (
