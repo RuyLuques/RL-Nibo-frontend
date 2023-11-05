@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LandingPage from '../LandingPage/LandingPage';
+import Hotsite from '../Hotsite/Hotsite';
 import './Services.sass';
 
 function Services() {
@@ -15,27 +16,25 @@ function Services() {
   };
 
   return (
-    <div className="bg-white min-h-screen">
-      <div className="container mx-auto py-8">
-        <h1 className="text-3xl text-center font-semibold mb-8 lg:text-5xl md:text-4xl text-indigo-800">Landing Page</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {/* Card 1 */}
+    <div className="bg-white py-10 rounded-md">
+    <div className="container mx-auto py-8">
+      <h1 className="text-4xl font-bold text-orange-600 text-center mb-8">Pages</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 p-5">
           <div className="relative rounded-lg" onClick={handleCard1Click}>
             {showShadowCard1 && (
               <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 rounded-lg shadow-lg"></div>
             )}
-            <div className="max-h-96 overflow-y-auto scrollable-container"> {/* Aplicar a classe de rolagem personalizada aqui */}
+            <div className="max-h-96 overflow-y-auto scrollable-container">
               <LandingPage />
             </div>
           </div>
 
-          {/* Card 2 */}
           <div className="relative rounded-lg" onClick={handleCard2Click}>
             {showShadowCard2 && (
               <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 rounded-lg shadow-lg"></div>
             )}
-            <div className="max-h-96 overflow-y-auto scrollable-container"> {/* Aplicar a classe de rolagem personalizada aqui */}
-              <LandingPage />
+            <div className="max-h-96 overflow-y-auto scrollable-container">
+              <Hotsite />
             </div>
           </div>
         </div>
